@@ -18,19 +18,19 @@ avatar: https://github.com/neelshihora/neelshihora.github.io/tree/main/images/Ne
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: neelshihora@gmail.com
   facebook:
   flickr:
   github: "https://github.com/neelshihora"
   instagram:
-  linkedin: "https://www.linkedin.com/in/neel-shihora-835a83bb/"
+  linkedin: in/neel-shihora-835a83bb/
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: "https://twitter.com/neelvshihora"
+  twitter: neelvshihora
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
-  Google Scholar: "https://scholar.google.com/citations?user=ipBNvFAAAAAJ&hl=en&oi=ao"
+  Google Scholar: citations?user=ipBNvFAAAAAJ&hl=en&oi=ao
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
