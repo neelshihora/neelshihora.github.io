@@ -528,3 +528,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 } */
+
+a {
+	color: #0254EB
+}
+a:visited {
+	color: #0254EB
+}
+
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
