@@ -529,14 +529,13 @@ img {
   margin-right: auto;
 } */
 
-a {
-	color: #0254EB
+ml {
+color: #0254EB
 }
-a:visited {
-	color: #0254EB
+ml:visited {
+color: #0254EB
 }
-
-a.morelink {
-	text-decoration:none;
-	outline: none;
+ml.morelink {
+text-decoration:none;
+outline: none;
 }
