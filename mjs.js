@@ -1,12 +1,12 @@
 $(document).ready(function() {
-  var showChar = 200;
+  var showChar = 300;
   var ellipsestext = "...";
   var moretext = "more";
   var lesstext = "less";
   $('.more').each(function() {
     var content = $(this).html();
 
-    if (content.length > showChar) {
+    if (content.length < showChar) {
 
       var c = content.substr(0, showChar);
       var h = content.substr(showChar - 1, content.length - showChar);
