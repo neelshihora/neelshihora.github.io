@@ -26,7 +26,7 @@ $(document).ready(function() {
       $(this).addClass("less");
       $(this).html(lesstext);
     }
-    $(this).parent().prev().toggle();
+    // $(this).parent().prev().toggle();
     $(this).prev().toggle();
     return false;
   });
