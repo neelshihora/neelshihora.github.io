@@ -528,17 +528,3 @@ img {
   margin-left: auto;
   margin-right: auto;
 } */
-
-ml {
-color: #0254EB
-}
-ml:visited {
-color: #0254EB
-}
-ml.morelink {
-text-decoration:none;
-outline: none;
-}
-.morecontent span {
-display: none;
-}
