@@ -4,31 +4,6 @@
 <head>
     <link rel="shortcut icon" href="favicon.ico" type=“image/x-icon”>
     <link rel="stylesheet" href="mvp.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    var maxLength = 325;
-    $(".show-read-more").each(function(){
-        var myStr = $(this).text();
-        if($.trim(myStr).length > maxLength){
-            var newStr = myStr.substring(0, maxLength);
-            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
-            $(this).empty().html(newStr);
-            $(this).append(' <a href="javascript:void(0);" class="read-more">... Read More</a>');
-            $(this).append('<span class="more-text">' + removedStr + '</span>');
-        }
-    });
-    $(".read-more").click(function(){
-        $(this).siblings(".more-text").contents().unwrap();
-        $(this).remove();
-    });    
-    });
-    </script>
-    <style>
-        .show-read-more .more-text{
-            display: none;
-        }
-    </style>
     <meta charset="utf-8" />
     <meta name="Neel Shihora" content="Website of roboticist Neel Shihora" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,97 +46,7 @@
     </p>  
     <p align="justify">
         ☎️Email is the best way to reach me. But you can also reach me through <a href="https://www.linkedin.com/in/neel-shihora-835a83bb/">LinkedIn</a> or <a href="https://twitter.com/ShihoraNeel">Twitter</a>. Write to me at <mark>neelshihora@gmail.com</mark>
-    </p>
-
-    <h3 style="padding-bottom: 0.5em">Research Work</h3>
-    <p align="left"><mark><b><a href="https://scholar.google.com/citations?user=ipBNvFAAAAAJ&hl=en&oi=ao">Google Scholar</a></b></mark></p>  
-    <!--  ------------------------------------------------------------------ -->  
-    <p style="color:blue;"><b>Peer-reviewed journal papers</b></p>
-    <p align="justify"><b>Elan Ahronovich, Olivia Richards <u>Neel Shihora</u>, Jin H. Shen, Karen Joos, and Nabil Simaan, <em>"Evaluation of Kinematically Redundant OCT-Guided Collaborative Robotic Assistant For Extraocular Subretinal Drug Delivery,"</em> IEEE Transactions on Biomedical Engineering, 2024.</b><br />  
-    (In Preparation)
-
-    <p align="justify"><b><u>Neel Shihora</u> and Nabil Simaan, <em>"Modeling and Quantifying the Effects of Frictional Losses on the Position Uncertainty in Tendon-Actuated Robots,"</em> Mechanisms and Machine Theory, 2024.</b><br />  
-    (Under Review)    
-
-    <p align="justify"><b><u>Neel Shihora</u>, Jared Lawson, Paul Moubarak, Maximillian Reese, Long Wang, and Nabil Simaan, <em>"Redundancy Resolution Strategies and Dexterity Analysis for Wire-actuated Dexterous Devices as Distal Tools in Surgical Robotic Systems,"</em> ASME Journal of Mechanisms and Robotics (JMR), 2024.</b><br />  
-    (In Preparation)
-
-    <p align="justify"><b><u>Neel Shihora</u> and Nabil Simaan, <em>"Singularity Analysis of the Continuum Robots: Geometric Insights,"</em> ASME Journal of Mechanisms and Robotics (JMR), 2024.</b><br />  
-    (In Preparation)     
-      
-    <p align="justify"><b>G.L.H. Johnston, <u>Neel Shihora</u>, and Nabil Simaan, <em>"A Modal-Space Formulation for Momentum Observer Contact Estimation and Effects of Uncertainty for Continuum Robots,"</em> IEEE Transactions on Robotics. Submitted May 2023.</b><br />  
-    <em> TRO | May, 2024</em> (Under Review) <!-- <a href=""> LINK </a> --> </p>
-
-    <!--  ------------------------------------------------------------------ -->  
-    <p style="color:blue;"><b>Peer-reviewed conference papers</b></p>
-    <p align="justify"><b>Olivia Richards, Elan Ahronovich, <u>Neel Shihora</u>, Ahmet Yildiz, Jumana Atoum, Jie Ying Wu, Keith L. Obstein, Nabil Simaan, <em>"A Robotic Mediation Device for Skill Assessment and Training During Colonoscopy,"</em> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024.</b> (Under Review)</b></p>
-        
-    <p><b>Induced Vertex Motion As a Performance Measure for Surgery in Confined Spaces</b><br />
-    <em>ICRA | May, 2023</em><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10161512"> LINK </a></p>
-    <img src="ICRA23_0839_graphical_abstract_GIF_large_compressed.gif" alt="Induced Vertex Motion As a Performance Measure for Surgery in Confined Spaces" />  
-    <p class="show-read-more" align="justify">
-        While in the design phase of a robotic system for the procedures performed in surgical confined spaces or hard-to-reach-deep surgical fields, 
-        designers can leverage a systematic method to compare the design alternatives for telesurgical manipulators quantitatively. Unlike most of the
-        work in the literature, we propose an approach for comparing design alternatives by considering the spurious motions along the length of the 
-        manipulator in lieu of existing approaches looking at only the end-effector dexterity measures. We propose a performance measure quantifying 
-        these spurious motions while the end-effector executes the application-critical tasks such as suturing and tying a knot. A good manipulator 
-        design should yield minimal swept volume along its length portions within the confined space. If informed about these spurious motions, that 
-        design would lead to reduced force on the internal organs, reducing the pain and discomfort as well as occurrences of extracorporeal 
-        inter-manipulator collisions. To validate the proposed approach, we present two illustrative simulation case studies: (1) two planar rigid 
-        link serial robots performing the task of following a desired trajectory and (2) two different architectures of tele-surgical manipulators
-        performing the task of passing a circular suture needle under the fulcrum constraints. The results show the applicability of the proposed 
-        performance measure in determining the suitability of a particular design alternative for a given task. Although results are promising, 
-        using this measure alone for design optimization may compromise overall device dexterity. Therefore, this measure needs to be incorporated 
-        into a weighted optimization framework for robot design.
-    </p>
-
-    <p align="justify"><b>Elan Ahronovich, <u>Neel Shihora</u>, Jin-Hui Shen, Karen Joos, and Nabil Simaan. <em>"Exploring an external approach to subretinal drug delivery via robot assistance and B-Mode OCT."</em> In 2023 IEEE International Conference on Robotics and Automation (ICRA), pp. 6795-6801. IEEE, 2023.</b><br />
-    <em> ICRA | May, 2023</em><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10161441"> LINK </a></p>
-      
-    <p><b>Geometric Insights into Kinematically-Singular Configurations of Planar Continuum Robots</b><br />
-    <em>ARK | June, 2022</em><a href="https://link.springer.com/chapter/10.1007/978-3-031-08140-8_26"> LINK </a></p> 
-    <img src="ARK2022_graphical_abstract_GIF.gif" alt="Geometric Insights into Kinematically-Singular Configurations of Planar Continuum Robots" />   
-    <p class="show-read-more" align="justify">
-        Continuum robots present designers with the challenges of interpreting the geometric conditions that lead to singularity. Unlike
-        serial robots, where it is easy to relate Plucker line coordinates to physical locations fixed in each link-attached frame, such 
-        geometric understanding is hard to visualize for continuum robots. In this paper, we explore the conditions for the singularity of 
-        continuum robots comprised of two and three segments. We derive the conditions for singularity and visualize these singular configurations 
-        with their corresponding conditions of singularity. We start the analysis assuming circular curvature, and then we discuss how the same 
-        analysis can be extended to non-circular curvature cases. We also define safety regions for singularity that depend on an assumed modal 
-        shape variation due to the elastic deflections of these robots. These safety zones can be used to produce designs and path plans that 
-        guarantee singularity-free performance despite norm-bounded deflections in configuration space.
-    </p>
-
-    <p><b>Feasibility of Remote Landmark Identification for Cricothyrotomy Using Robotic Palpation</b><br />
-    <em>IROS | 2021</em><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9636481"> LINK </a></p>
-    <img src="IROS2021_graphical_abstract_GIF.gif" alt="Feasibility of Remote Landmark Identification for Cricothyrotomy Using Robotic Palpation" />   
-    <p class="show-read-more" align="justify">
-        Cricothyrotomy is a life-saving emergency intervention that secures an alternate airway route after a neck injury or obstruction. The 
-        procedure starts with identifying the correct location (the cricothyroid membrane) for creating an incision to insert an endotracheal tube. 
-        This location is determined using a combination of visual and palpation cues. Enabling robot-assisted remote cricothyrotomy may extend this
-        life-saving procedure to injured soldiers or patients who may not be readily accessible for on-site intervention during searchand-rescue 
-        scenarios. As a first step towards achieving this goal, this paper explores the feasibility of palpation-assisted landmark identification 
-        for cricothyrotomy. Using a cricothyrotomy training simulator, we explore several alternatives for in-situ remote localization of the 
-        cricothyroid membrane. These alternatives include a) unaided telemanipulation, b) telemanipulation with direct force feedback, c) telemanipulation 
-        with superimposed motion excitation for on-line stiffness estimation and display, and d) fully autonomous palpation scan initialized based on 
-        the user’s understanding of key anatomical landmarks. Using the manually digitized cricothyroid membrane location as ground truth, we compare 
-        these four methods for accuracy and repeatability of identifying the landmark for cricothyrotomy, time of completion, and ease of use.
-        These preliminary results suggest that the accuracy of remote cricothyrotomy landmark identification is improved when the user is aided with 
-        visual and force cues. They also show that, with proper user initialization, landmark identification using remote palpation is feasible - 
-        therefore satisfying a key prerequisite for future robotic solutions for remote cricothyrotomy.
-    </p>
-
-    <p align="justify"><b>Abah, Colette, Giuseppe Del Giudice, <u>Neel Shihora</u>, Rohan Chitale, and Nabil Simaan. <em>"Towards Semi-Automated Mechanical Thrombectomy: Path Planning Considerations for a Double Articulated Microcatheter."</em> In 2019 Proceedings of the 12th Hamlyn Symposium on Medical Robotics, pp. 67-68. 2019.</b><br />
-    <em>HSMR | June, 2019</em><a href="https://www.researchgate.net/profile/Colette-Abah/publication/333967991_Towards_Semi-Automated_Mechanical_Thrombectomy_Path_Planning_Considerations_for_a_Double_Articulated_Microcatheter/links/608ac85ea6fdccaebdf89aa6/Towards-Semi-Automated-Mechanical-Thrombectomy-Path-Planning-Considerations-for-a-Double-Articulated-Microcatheter.pdf"> LINK </a></p>  
-
-    <!--  ------------------------------------------------------------------ -->  
-    <p style="color:blue;"><b>Abstracts and Workshop presentations</b></p>
-    <p align="justify"><b><u>Neel Shihora</u>, Ryan Walsh, Nabil Simaan, <em>"Feasibility Study of Assistive Telemanipulation Methods for Identifying the Cricothyrotomy Landmark Using Robotic Palpation"</em>, in Rising Challenges to En Route Care and Patient Movement, Military Health System Research Symposium (MHSRS), 2021</b><br />
-    <em>MHSRS | August 2021</em></p>
-
-    <p align="justify"><b><u>Neel Shihora</u>, Rashid Yasin, Ryan Walsh, Nabil Simaan, <em>"Semi-Autonomous Remote Landmark Identification for Cricothyrotomy using Robotic Palpation"</em>, IEEE workshop on Autonomous System in Medicine: Current Challenges in Design, Modeling, Perception, Control, and Applications, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020</b><br />
-    <em>IROS | October 2020</em></p>
-      
+    </p>     
   </main>
 </body>
     
